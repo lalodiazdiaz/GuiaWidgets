@@ -10,16 +10,23 @@
     tools:context=".MainActivity">
 
 <Button
+    android:id="@+id/btnTexto"
     android:text="Widgets de texto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+   />
 
     <Button
+        android:id="@+id/btnBotones"
+        android:text="Botones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Botones"/>
+
+        />
     <Button
+        android:id="@+id/btnSeleccion"
+        android:text="Seleccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seleccion"/>
+   />
 </LinearLayout>
