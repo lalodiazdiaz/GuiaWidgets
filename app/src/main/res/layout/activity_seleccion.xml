@@ -5,16 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/black"
+    android:padding="8dp"
     tools:context=".SeleccionActivity">
 
-    <TextView
-        android:text="Y aca tambien alv"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+ <CheckBox
+     android:id="@+id/chkSeleccionado"
+     android:text="Selecciondo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:onClick="ValidaSeleccion"
+/>
+    <Switch
+        android:id="@+id/swSeleccionar"
+        android:text="Permitir  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ValidaSeleccion"
+        />
 
 </LinearLayout>

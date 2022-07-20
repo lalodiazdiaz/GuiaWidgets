@@ -14,7 +14,7 @@ class TextoActivity : AppCompatActivity() {
         btnMostrarDatos.setOnClickListener {
             var nombre = txtNombre.text.toString()
             var edad = txtEdad.text.toString()
-            Toast.makeText(applicationContext, "Que onda $nombre, con que tienes $edad",Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Que onda $nombre, con que tienes $edad años ",Toast.LENGTH_LONG).show()
 
         }
     }

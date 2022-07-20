@@ -5,17 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/black"
+    android:padding="8dp"
     tools:context=".BotonesActivity">
 
-    <TextView
-        android:text="Aca tambien ando perros"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+<Button
+    android:id="@+id/btnBoton1"
+    android:text="Saludar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:layout_gravity="center_horizontal"
+    android:tag="saludar"
+    android:onClick="mostrarSaludo"/>
+
+
+    <ImageButton
+        android:id="@+id/btnImageBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_email"
+        android:tag="email"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="mostrarSaludo"
+        />
 
 
 </LinearLayout>
