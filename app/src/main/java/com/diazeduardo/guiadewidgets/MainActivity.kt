@@ -11,7 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnTexto.setOnClickListener{
-            Log.d("Mensaje","Que onda perros")
+            Log.d("Mensaje","fuck you")
+        }
+
+        btnBotones.setOnClickListener {
+            Log.d("Mensaje","mama huevo")
+        }
+        btnSeleccion.setOnClickListener {
+            Log.d("Mensaje","chupa pinga")
+
         }
     }
 }
