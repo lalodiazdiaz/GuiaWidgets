@@ -5,14 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical"
+    android:padding="8dp"
     tools:context=".TextoActivity">
 
     <TextView
-        android:textAlignment="center"
-        android:text="Aca andamos perro"
+        android:gravity="center_horizontal"
+        android:text="Soy un TextView"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <EditText
+        android:id="@+id/txtNombre"
+        android:hint="Ingresa tu nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresa tu edad"
+        android:inputType="number" />
+<Button
+    android:id="@+id/btnMostrarDatos"
+    android:text="Mostrar datos "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
 </LinearLayout>
