@@ -1,5 +1,6 @@
 package com.diazeduardo.guiadewidgets
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,15 +12,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnTexto.setOnClickListener{
-            Log.d("Mensaje","fuck you")
+        var intent = Intent(applicationContext,TextoActivity::class.java)
+            startActivity(intent)
         }
 
         btnBotones.setOnClickListener {
-            Log.d("Mensaje","mama huevo")
+            var intent = Intent(applicationContext,BotonesActivity::class.java)
+            startActivity(intent)
         }
         btnSeleccion.setOnClickListener {
-            Log.d("Mensaje","chupa pinga")
-
+            var intent = Intent(applicationContext,SeleccionActivity::class.java)
+            startActivity(intent)
         }
     }
 }

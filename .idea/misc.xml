@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/eduar/Desktop/Proyectos/Android/Guiadewidgets/app/src/main/res/layout/activity_botones.xml" value="0.259375" />
         <entry key="..\:/Users/eduar/Desktop/Proyectos/Android/Guiadewidgets/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/eduar/Desktop/Proyectos/Android/Guiadewidgets/app/src/main/res/layout/activity_seleccion.xml" value="0.259375" />
+        <entry key="..\:/Users/eduar/Desktop/Proyectos/Android/Guiadewidgets/app/src/main/res/layout/activity_texto.xml" value="0.1578125" />
       </map>
     </option>
   </component>
