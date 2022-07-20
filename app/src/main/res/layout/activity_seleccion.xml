@@ -23,4 +23,23 @@
         android:onClick="ValidaSeleccion"
         />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:text="Radio Uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ValidaSeleccion"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:text="Radio Dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ValidaSeleccion"/>
+    </RadioGroup>
 </LinearLayout>
