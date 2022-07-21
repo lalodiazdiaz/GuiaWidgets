@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.diazeduardo.guiadewidgets.databinding.ActivityBotonesBinding
+import com.diazeduardo.guiadewidgets.databinding.ActivityMainBinding
 
 class BotonesActivity : AppCompatActivity() {
+    lateinit var binding : ActivityBotonesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_botones)
+        binding= ActivityBotonesBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 
     fun mostrarSaludo(view: View) {

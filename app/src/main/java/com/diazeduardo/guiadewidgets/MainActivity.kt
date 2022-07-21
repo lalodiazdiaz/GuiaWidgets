@@ -4,24 +4,32 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
+import com.diazeduardo.guiadewidgets.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnTexto.setOnClickListener{
+        binding.btnTexto.setOnClickListener{
         var intent = Intent(applicationContext,TextoActivity::class.java)
             startActivity(intent)
         }
 
-        btnBotones.setOnClickListener {
+        binding.btnBotones.setOnClickListener {
             var intent = Intent(applicationContext,BotonesActivity::class.java)
             startActivity(intent)
         }
-        btnSeleccion.setOnClickListener {
+        binding.btnSeleccion.setOnClickListener {
             var intent = Intent(applicationContext,SeleccionActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnRegistro.setOnClickListener {
+            var intent = Intent(applicationContext,RegistroActivity::class.java)
             startActivity(intent)
         }
     }
